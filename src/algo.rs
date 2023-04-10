@@ -1,4 +1,4 @@
-fn osa_dist(s1: &str, s2: &str) -> usize { 
+pub fn osa_dist(s1: &str, s2: &str) -> usize { 
     let mut dp = [vec![0; s1.len()+1], vec![0; s2.len()+1]];
     let b1: &[u8] = s1.as_bytes();
     let b2: &[u8] = s2.as_bytes();
